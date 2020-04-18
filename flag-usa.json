@@ -1,0 +1,313 @@
+[
+    {
+        "title": "Security",
+        "values": [
+            "Did you enable 2-step authentication?",
+            "Did you use email as a login option?",
+            "Did you prevent users from making multiple login attempts?",
+            "Did you use strong passwords with upper and lower case letters, numbers and special characters in all accounts?",
+            "Did you enable https in WordPress?",
+            "Did you set up a backup routine?",
+            "Installed monitoring scripts 24/7",
+            "Did you change the login URL?",
+            "Did you remove 'Search-Replace-DB-master' files from the server?",
+            "Did you use passwords with uppercase and lowercase letters, numbers and special characters on the database user?",
+            "Did you change the prefix of the tables in the database?",
+            "Have you made sure that your 'wp-config.php' file cannot be accessed by others?",
+            "Did you set folder permissions for 755 and files for 644?",
+            "Have you made sure that your 'wp-config.php' file cannot be accessed by others?",
+            "Did you generate new access keys in 'wp-config.php'?",
+            "Did you remove the 'license.txt', 'wp-config-sample.php' and 'readme.html' files?",
+            "Did you disable the editor through 'wp-config.php' with the code: define ('DISALLOW_FILE_EDIT', true);",
+            "Did you prevent the search of directories via .htaccess with the code: Options All -IndexesOptions All -Indexes",
+            "Avoid user registration"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br/como-ativar-a-verificacao-em-duas-etapas-no-wordpress",
+            "https://www.materiaisricos.com.br/usar-email-como-opcao-de-login-no-wordpress",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/mudar-a-url-de-login-do-wordpress",
+            "https://www.materiaisricos.com.br/search-replace-db-master-wordpress",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/como-gerar-novas-chaves-de-acesso-no-wordpress-salt-keys",
+            "https://www.materiaisricos.com.br/remocao-de-arquivos-desnecessarios-no-wordpress",
+            "https://www.materiaisricos.com.br/comandos-para-proteger-o-arquivo-wp-config",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/evite-o-cadastro-de-usuarios-no-wordpress"
+        ]
+    },
+    {
+        "title": "Administrative panel",
+        "values": [
+            "Did you put the password in the wp-admin folder?",
+            "Is the WordPress version up to date?",
+            "Didn't use an account with username admin?",
+            "Did you create an 'editor' account to publish your content?",
+            "Have you installed a plugin to check if any files have been edited?",
+            "Did you create a backup routine?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br/proteja-o-diretorio-wp-admin-do-seu-site-wordpress",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Themes",
+        "values": [
+            "Did you install only themes from trusted sources?",
+            "Did you remove the WordPress version in the theme?",
+            "Is the active theme updated to its latest version?",
+            "Did you delete inactive themes?",
+            "Did you insert the favicon?",
+            "Did you create the 404 page?",
+            "Did you remove all console.log and alerts from the javascripts used?",
+            "Does the theme support an image gallery with navigation option and lightbox?",
+            "Does the theme have the 'theme-color' meta tag?",
+            "Did you use the sprite technique to load multiple images?",
+            "Did you use the inputs correctly?",
+            "Is there a message modal configured if needed?",
+            "For all Custom Posts created, were all Singles.php created?",
+            "Was the author listing created? (author.php)",
+            "Was the tag listing created? (tags.php)",
+            "Does the site work or is any message shown if the user disables javascript?",
+            "Are color and contrast appropriated?",
+            "Did you create the display of search results?",
+            "Are all elements of the sidebar formatted correctly?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Comments",
+        "values": [
+            "Is it possible to follow new comments by email in a post that the reader commented on?",
+            "Are the commenter's avatar working?",
+            "Are very long comment lists with pagination?",
+            "Are comment spam being effectively stopped?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Hosting and domain",
+        "values": [
+            "Did you hire a reliable hosting?",
+            "Does the contracted hosting offer SSH access?",
+            "Does the hosting server handle an excessive amount of accesses if there is a peak in traffic?",
+            "Do you have access to DNS editing if necessary to change the server?",
+            "Did you enable error logs and check after publication if there are any errors on the server?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/conexao-ssh-em-sites-wordpress",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "SEO",
+        "values": [
+            "Did you set up Google Analytics?",
+            "Is the site registered with Google Search Console?",
+            "After publication, did you enable indexing?",
+            "Did you Install the SEO plugin?",
+            "Did you send the sitemap to search engines like Google, Bing and Yahoo?",
+            "Are robots.txt configured correctly?",
+            "Did you use 301 redirect to urls that were deleted or changed?",
+            "Did you add alt-tags to all images?",
+            "Did you fill in the SEO fields on all pages and posts? If not, did you at least guide the client?",
+            "Did you generate permanent links?",
+            "Did you block the indexing of custom posts as a slider to not display the single?",
+            "Do all pages have a single h1?",
+            "Do you have rich snippets?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/plugin-wordpress-seo-by-yoast",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Content",
+        "values": [
+            "Is there a page created for “maintenance mode” in case the site needs to go down for maintenance reasons?",
+            "Was the cookie alert created?",
+            "Has the Privacy Policy page been published?",
+            "Did you exclude sample content like Lorem Ipsum and demo images?",
+            "Did you check that all text and image links are being loaded correctly on click?",
+            "Is your website accessible for users with disabilities? Does it meet WAI-ARIA standards?",
+            "If you made a new website and will upload the current one, was the old one backed up and removed from the server?",
+            "In the blog section, is it possible to display related content?",
+            "Are the social media links inserted correctly?",
+            "Are the entire family of social media icons available for viewing?",
+            "Did you test content in modern browsers (Chrome, Internet Explorer and Firefox)",
+            "Is the customer training video available on the control panel for future reference if necessary?",
+            "The site has pagination and uses rel next and rel prev?",
+            "Have you revised the entire text to avoid spelling and concordance errors?",
+            "Did you add the site description and remove 'Just another WordPress site'?",
+            "Did you remove the 'staging' content and do the 301 redirect?",
+            "Do the sharing buttons like Twitter work properly?",
+            "In the blog section, is it possible to display the information of the content author and their social networks?",
+            "Can the author choose how to display the related content? Tags and / or categories?",
+            "Are all content edited by the panel? Did you forget any html as a phone number on the pages?",
+            "Are all formatting content such as lists, image alignment, tables correctly styled?",
+            "If there is no highlighted image, will a standard image be displayed in posts and pages?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Analytics",
+        "values": [
+            "Have you created filters to exclude IP accesses from your workplace?",
+            "Did you activate the 'search parameter' on the website to identify future queries?",
+            "Did you insert a heat map script on the site?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Contact Form",
+        "values": [
+            "Are the form messages being sent correctly?",
+            "Are the customers receiving emails correctly in the desired email?",
+            "Are all the message fields on the form translated correctly?",
+            "Are you storing message receipts for future export if requested by the customer?",
+            "Have you set up transactional email service?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Responsive",
+        "values": [
+            "Have you tested the visualization content preview on all devices? (Mobile, Tablet and Computer)",
+            "Have you been reducing the size of the screen and seeing the size transition occur without any break in layout?",
+            "In the mobile version, smaller images are being loaded?",
+            "Did you use media queries to load icons, images and background in a smaller size in the mobile version?",
+            "Does the multilevel menu work perfectly in the mobile version?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br"
+        ]
+    },
+    {
+        "title": "Performance",
+        "values": [
+            "Did you optimize all images?",
+            "Are the javascript files minified?",
+            "Are the css files minified?",
+            "Did you implement lazy load?",
+            "Did you configure server cache?",
+            "Did you do the speed analysis on sites like Google's PageSpeed and get a good score?",
+            "Is Gzip enabled?",
+            "Did you use preconnect?",
+            "Did you disable WordPress emoticons?",
+            "Did you use the InnoDB Storage Engine for MySQL?",
+            "Did you disable pingbacks?",
+            "After deleting a plugin, was the data in the database deleted?",
+            "Did you use the php flush function in the header?",
+            "Did you activate CDN?",
+            "Did you delete old revisions from the database?",
+            "Did you add ElasticSearch to the search?"
+        ],
+        "links": [
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/innodb-no-wordpress",
+            "https://www.materiaisricos.com.br/remover-os-estilos-dos-emoji",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/desabilitar-pingbacks-e-trackbacks-no-wordpress",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br",
+            "https://www.materiaisricos.com.br/instalar-cdn-no-wordpress",
+            "https://www.materiaisricos.com.br/excluir-revisoes-antigas-do-wordpress",
+            "https://www.materiaisricos.com.br/elasticsearch-no-wordpress"
+        ]
+    }
+]
