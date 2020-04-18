@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Pixel Art</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" media="screen" type="text/css" href="colorpicker.css"><link rel="stylesheet" media="screen" type="text/css" href="layout.css"><script src="https://code.jquery.com/jquery-1.11.2.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script></head><body class="">
+		<ul class="tabela"></ul><div class="area-cores">
+			<ul class="cores ui-widget-content"><li style="background-color: #030303">
+				<li style="background-color: #c95eb0">
+				<li style="background-color: #fd79de">
+				<li style="background-color: #8d8d8d">
+				<li style="background-color: #f6eb34">
+				<li style="background-color: #fed359">
+				<li style="background-color: #e0be85">
+				<li style="background-color: #a47e4a">
+				<li style="background-color: #1b7ffb">
+				<li style="background-color: #a3d476">
+				<li style="background-color: #78a747">
+				<li style="background-color: #e73f1b">
+			</ul><div id="colorSelector">
+				<div class="color-div" style="background-color: rgb(94, 94, 242);"></div>
+			</div>
+			<span class="move">Mover paleta</span>
+		</div>
+		<form action="">
+			<input id="horizontal" type="number" placeholder="Horizontal" value=""><input id="vertical" type="number" placeholder="Vertical" value=""><input id="gerar" type="submit" value="Gerar"><input id="limpar" type="submit" value="Limpar"><input id="linha" type="number" placeholder="Adicionar linha" value=""><input id="adicionar" type="submit" value="Adicionar linha" disabled></form>
+</body><script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$( ".cores" ).on( "click", "li", function() {
+		    height = $( ".cores li" ).height();
+		});
+
+		$( ".tabela" ).on( "mousedown", "li", function() {
+			valordabody = $("body").attr('class');
+			$(this).css('background-color', valordabody);
+		});
+
+		$( "body" ).on( "click", "#gerar", function(event) {
+			$(".tabela li").remove();
+			$("#horizontal").attr('disabled','disabled');
+			$("#vertical").attr('disabled','disabled');
+			pegahorizonhal = $("#horizontal").val();
+			pegavertical = $("#vertical").val();
+			resultado = pegahorizonhal*pegavertical;
+			width = (100 / pegahorizonhal);
+			$("#adicionar").removeAttr('disabled');
+			event.preventDefault();
+
+			for(i = 0; i <= resultado-1; i++) {
+			    $(".tabela").append("<li>");
+			}
+
+		$(".tabela li").css("width", width+"%");
+			height = $(".tabela li").width();
+			$(".tabela li").height(height);
+		});
+
+		$( "body" ).on( "click", "#limpar", function(event) {
+			$(".tabela li").remove();
+			event.preventDefault();
+		});
+
+		$(document).mousedown(function() {
+			$(".tabela li").bind('mouseover',function(){
+				valordabody = $("body").attr('class');
+				$(this).css('background-color', valordabody);
+			});
+		})
+		.mouseup(function() {
+		    $(".tabela li").unbind('mouseover');
+		});
+		$( "body" ).on( "click", "#adicionar", function(event) {
+			pegahorizonhal = $("#horizontal").val();
+			pegavertical = $("#linha").val();
+			resultado = pegahorizonhal*pegavertical;
+			width = (100 / pegahorizonhal);
+			event.preventDefault();
+
+			for(i = 0; i <= resultado-1; i++) {
+			    $(".tabela").append("<li>");
+			}
+			$(".tabela li").css("width", width+"%");
+			height = $(".tabela li").width();
+			$(".tabela li").height(height);
+		});
+
+		$(function() {
+		    $(".area-cores").draggable();
+		});
+
+		$('#colorSelector').ColorPicker({
+			color: '#0000ff',
+			onShow: function (colpkr) {
+				$(colpkr).fadeIn(500);
+				return false;
+			},
+			onHide: function (colpkr) {
+				$(colpkr).fadeOut(500);
+				return false;
+			},
+			onChange: function (hsb, hex, rgb) {
+				$('#colorSelector div').css('backgroundColor', '#' + hex);
+			}
+		});
+
+		$("#colorSelector").on( "click", ".color-div", function() {
+			valor = $(".colorpicker_hex input[type=text]").val();
+			$('body').attr("class", "#"+valor );
+		});
+
+		$("body").on("click", ".colorpicker", function() {
+			valor = $(".colorpicker_hex input[type=text]").val();
+			$('body').attr("class", "#"+valor );
+		});
+
+		function rgb2hex(rgb){
+			rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+			return (rgb && rgb.length === 4) ? "#" +
+			("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+			("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+			("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
+		}
+
+		$(".cores").on("click", "li", function() {
+		    var hex = rgb2hex( $(this).css("background-color") );
+		    $('body').attr("class", hex );
+		});
+
+	});
+</script><script type="text/javascript" src="colorpicker.js"></script></html>

@@ -1,0 +1,206 @@
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-family: "Roboto",sans-serif;}
+body {margin: 0;padding: 0;}
+.all {background: #c9dbe9;background: -webkit-linear-gradient(top,#c9dbe9 0%,#fff 100%);background: -linear-gradient(top,#c9dbe9 0%,#fff 100%);background: -moz-linear-gradient(top,#c9dbe9 0%,#fff 100%);overflow: hidden;}
+@font-face {font-family: "alarmclock";src: url("../fonts/alarmclock.woff") format("woff"),url("../fonts/alarmclock.ttf") format("truetype"),url("../fonts/alarm clock.eot"),url("../fonts/alarmclock.svg#alarmclock") format("svg"),url("../fonts/alarm clock.eot?#iefix") format("embedded-opentype");font-weight: normal;font-style: normal;}
+.color3 {background-color: #ffcb4b;width: 100%;height: 10px;position: absolute;bottom: 40px;left: 0;}
+.color2 {background-color: #516e80;width: 100%;height: 10px;position: absolute;bottom: 30px;left: 0;}
+.color1 {background-color: #364854;width: 100%;height: 30px;position: absolute;bottom: 0;left: 0;}
+.cloud {width: 200px;height: 60px;background: #fff;-webkit-border-radius: 200px;-moz-border-radius: 200px;-ms-border-radius: 200px;border-radius: 200px;position: relative;}
+.cloud:before, .cloud:after {content: "";position: absolute;position: absolute;background: #fff;width: 100px;height: 80px;top: -15px;left: 10px;border-radius: 100px;-moz-border-radius: 100px;-webkit-border-radius: 100px;-webkit-transform: rotate(30deg);transform: rotate(30deg);-moz-transform: rotate(30deg);}
+.cloud:after {width: 120px;height: 120px;top: -55px;left: auto;right: 15px;}
+.c1 {-webkit-animation: moveclouds 245s linear infinite;-moz-animation: moveclouds 245s linear infinite;-o-animation: moveclouds 245s linear infinite;}
+.c2 {left: 200px;-webkit-transform: scale(.6);-moz-transform: scale(.6);transform: scale(.6);opacity: .6;-webkit-animation: moveclouds 225s linear infinite;-moz-animation: moveclouds 225s linear infinite;-o-animation: moveclouds 225s linear infinite;}
+.c3 {left: -250px;top: -200px;-webkit-transform: scale(.8);-moz-transform: scale(.8);transform: scale(.8);opacity: .8;-webkit-animation: moveclouds 220s linear infinite;-moz-animation: moveclouds 220s linear infinite;-o-animation: moveclouds 220s linear infinite;}
+.c4 {left: 470px;top: -250px;-webkit-transform: scale(.75);-moz-transform: scale(.75);transform: scale(.75);opacity: .75;-webkit-animation: moveclouds 218s linear infinite;-moz-animation: moveclouds 218s linear infinite;-o-animation: moveclouds 218s linear infinite;}
+.c5 {left: -150px;top: -150px;-webkit-transform: scale(.8);-moz-transform: scale(.8);transform: scale(.8);opacity: .8;-webkit-animation: moveclouds 220s linear infinite;-moz-animation: moveclouds 220s linear infinite;-o-animation: moveclouds 220s linear infinite;}
+@-webkit-keyframes moveclouds {0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}}
+@-moz-keyframes moveclouds {0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}}
+@-o-keyframes moveclouds {0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}}
+.github {background: url("../../src/images/github.png") no-repeat;position: fixed;right: 0;top: 0;width: 148px;height: 140px;z-index: 999;}
+.github span {display: none;}
+#combustivel h2 {margin-top: 0;margin-bottom: 20px;font-weight: 500;color: #ff5722;font-size: 1.4em;}
+#combustivel .screen-1 {text-align: center;}
+#combustivel .screen-1 .button {margin-top: 0;}
+#combustivel .screen-1 input[type="number"] {width: 10%;padding: 10px;display: inline-block;text-align: center;}
+#combustivel .info-tanque {width: 100%;display: inline-block;font-size: .85em;font-style: normal;margin-top: 10px;}
+#combustivel .screen-2, #combustivel .screen-3 {text-align: center;}
+#combustivel .screen-3 .fieldset-fuel label {text-align: left;cursor: pointer;font-size: 1.3em;margin-bottom: 10px;color: #000;}
+#combustivel .screen-3 .fieldset-fuel label span {font-weight: bold;}
+#combustivel .cc-selector fieldset {display: inline-block;margin-right: 20px;}
+#combustivel .cc-selector input {margin: 0;padding: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+#combustivel .cc-selector input:checked+.fuel-type {-webkit-filter: none;-moz-filter: none;filter: none;}
+#combustivel .cc-selector input:active+.fuel-type {opacity: .9;}
+#combustivel .cc-selector .fuel-0 {background: url("../../src/images/fuel-0.png") no-repeat;}
+#combustivel .cc-selector .fuel-1 {background: url("../../src/images/fuel-1.png") no-repeat;}
+#combustivel .cc-selector .fuel-2 {background: url("../../src/images/fuel-2.png") no-repeat;}
+#combustivel .cc-selector .fuel-3 {background: url("../../src/images/fuel-3.png") no-repeat;}
+#combustivel .cc-selector .fuel-type {cursor: pointer;background-size: contain;background-repeat: no-repeat;display: inline-block;width: 100px;height: 65px;-webkit-transition: all 100ms ease-in;-moz-transition: all 100ms ease-in;transition: all 100ms ease-in;-webkit-filter: brightness(1.8) grayscale(1) opacity(.7);-moz-filter: brightness(1.8) grayscale(1) opacity(.7);filter: brightness(1.8) grayscale(1) opacity(.7);}
+#combustivel .cc-selector .fuel-type:hover {-webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);-moz-filter: brightness(1.2) grayscale(.5) opacity(.9);filter: brightness(1.2) grayscale(.5) opacity(.9);}
+#combustivel .mensagem-1, #combustivel .mensagem-2 {opacity: 0;display: none;}
+#combustivel .aviso-1 {position: relative;}
+#combustivel .aviso-1 .mensagem-1 {display: block;position: absolute;left: -118px;width: 118px;z-index: 3;background: #000;top: -21px;color: #fff;font-size: .5em;padding: 10px;text-transform: none;opacity: 1;}
+#combustivel .aviso-1 .mensagem-1:after {width: 0;height: 0;border-top: 10px solid transparent;border-bottom: 10px solid transparent;border-left: 10px solid #000;position: absolute;right: -9px;content: "";top: 40%;}
+#combustivel .aviso-1 .mensagem-1:before {width: 15px;height: 15px;content: "x";position: absolute;top: -1px;right: 0;background-color: #fff;color: #000;font-weight: bold;text-align: center;cursor: pointer;}
+#combustivel .aviso-1 .mensagem-1 em {color: yellow;font-style: normal;}
+#combustivel .aviso-1 .mensagem-1 em i {color: yellow;font-style: normal;}
+#combustivel .aviso-2 {position: relative;}
+#combustivel .aviso-2 .mensagem-2 {display: block;position: absolute;left: -118px;width: 118px;z-index: 3;background: #000;top: -21px;color: #fff;font-size: .5em;padding: 10px;text-transform: none;opacity: 1;}
+#combustivel .aviso-2 .mensagem-2:after {width: 0;height: 0;border-top: 10px solid transparent;border-bottom: 10px solid transparent;border-left: 10px solid #000;position: absolute;right: -9px;content: "";top: 40%;}
+#combustivel .aviso-2 .mensagem-2 em {color: yellow;font-style: normal;}
+#combustivel .aviso-2 .mensagem-2 em i {color: yellow;font-style: normal;}
+#combustivel .fieldset-fuel {width: 100%;}
+#combustivel .fieldset-fuel label {width: 20%;display: inline-block;}
+#combustivel .fieldset-fuel label span {float: right;}
+#combustivel .wrapper {transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);left: 50%;top: 50%;position: absolute;width: 75%;}
+#combustivel ::-webkit-input-placeholder {color: #333;font-size: 1.2em;}
+#combustivel :-moz-placeholder {color: #333;font-size: 1.2em;}
+#combustivel ::-moz-placeholder {color: #333;font-size: 1.2em;}
+#combustivel :-ms-input-placeholder {color: #333;font-size: 1.2em;}
+#combustivel .button {padding: 10px;display: inline-block;margin-top: 20px;cursor: pointer;vertical-align: top;height: 37px;}
+#combustivel .button-next {background-color: #8bc34a;color: #fff;}
+#combustivel .button-next:hover {background-color: #7eb73d;}
+#combustivel .button-next.disabled {background-color: #bfbfbf;cursor: no-drop;}
+#combustivel .porcentagem {position: absolute;bottom: 0;padding: 0;margin: 0;width: 100%;height: 40%;z-index: 2;}
+#combustivel .porcentagem li {list-style: none;border-bottom: 1px solid #fff;font-size: .8em;padding-left: 20px;color: #fff;}
+#combustivel .porcentagem li:last-child {border-bottom: 0;}
+#combustivel .porcentagem li:nth-of-type(1) {height: 12%;line-height: 21px;background-color: #fdc82f;}
+#combustivel .porcentagem li:nth-of-type(2) {height: 12%;line-height: 21px;background-color: #006298;}
+#combustivel .porcentagem li:nth-of-type(3) {height: 28%;line-height: 56px;background-color: #e17000;}
+#combustivel .porcentagem li:nth-of-type(4) {height: 15%;line-height: 28px;background-color: #00b2a9;}
+#combustivel .porcentagem li:nth-of-type(5) {height: 33%;background-color: #008542;line-height: 66px;}
+#combustivel .porcentagem li i, #combustivel .porcentagem li em {font-style: normal;}
+#combustivel .valor-pago {padding: 0;margin: 0;position: absolute;left: 0;bottom: 0;height: 40%;width: 100%;text-align: right;z-index: 1;overflow: hidden;}
+#combustivel .valor-pago.animate {width: 335px;overflow: visible;}
+#combustivel .valor-pago.animate li {right: -200px;-webkit-transition: all 1s;-moz-transition: all 1s;-o-transition: all 1s;transition: all 1s;}
+#combustivel .valor-pago li {list-style: none;color: #000;font-size: .7em;position: relative;right: 0;text-align: left;}
+#combustivel .valor-pago li span {padding-left: 70px;display: inline-block;width: 100%;}
+#combustivel .valor-pago li strong i {font-style: normal;}
+#combustivel .valor-pago li:last-child {border-bottom: 0;}
+#combustivel .valor-pago li:nth-of-type(1) {height: 12%;line-height: 21px;border-bottom: 2px dotted #fdc82f;}
+#combustivel .valor-pago li:nth-of-type(2) {height: 12%;line-height: 21px;border-bottom: 2px dotted #006298;}
+#combustivel .valor-pago li:nth-of-type(3) {height: 28%;line-height: 56px;border-bottom: 2px dotted #e17000;}
+#combustivel .valor-pago li:nth-of-type(4) {height: 15%;line-height: 28px;border-bottom: 2px dotted #00b2a9;}
+#combustivel .valor-pago li:nth-of-type(5) {height: 33%;line-height: 66px;border-bottom: 2px dotted #008542;}
+#combustivel .hide-desktop {display: none;}
+#combustivel .abastecer-mobile {display: none;}
+#combustivel .real {border: 1px solid red;}
+#combustivel .abastecer {background-color: #f8cf26;color: #1f1f1f;display: inline-block;padding: 15px;font-size: 1.6em;cursor: pointer;padding-left: 40px;font-weight: bold;text-transform: uppercase;margin: 0 auto;right: 0;left: 0;position: absolute;bottom: 225px;text-align: center;}
+#combustivel .abastecer.disabled, #combustivel .abastecer.disabled2 {background-color: #ccc;pointer-events: none;}
+#combustivel .abastecer:before {width: 64px;height: 64px;position: absolute;left: 6px;top: -4px;content: "";background: url("../../src/images/botao.png") no-repeat;}
+#combustivel .situacao {margin-top: 15px;display: inline-block;background: #676767;padding: 10px;width: 40%;padding-left: 80px;position: absolute;bottom: 0;right: 0;}
+#combustivel .situacao span {font-weight: 500;margin-bottom: 10px;display: inline-block;color: #fff;}
+#combustivel .situacao:before {background: url("../../src/images/situacao.png") no-repeat;width: 72px;height: 72px;content: "";position: absolute;left: 0;top: 6px;}
+#combustivel .situacao i {font-style: normal;}
+#combustivel .situacao ul {padding: 0;margin: 0;}
+#combustivel .situacao ul li {list-style: none;color: #fff;font-size: .8em;}
+#combustivel .completar {width: 55%;display: inline-block;background-color: #ffcdc9;padding: 10px;margin-top: 10px;float: right;left: 21px;position: relative;}
+#combustivel .completar:before {width: 0;height: 0;border-left: 8px solid transparent;border-right: 9px solid transparent;border-bottom: 9px solid #ffcdc9;position: absolute;right: 0;content: "";top: -9px;left: 0px;margin: 0 auto;z-index: 9999;}
+#combustivel .completar span.title {color: #333;display: inline-block;font-weight: 500;font-size: .9em;margin-bottom: 5px;}
+#combustivel .completar span.descr {color: #333;display: inline-block;margin-bottom: 5px;font-size: .75em;width: 100%;}
+#combustivel .completar span.descr i {font-style: normal;}
+#combustivel .completar ul {padding: 0;margin: 0;}
+#combustivel .completar ul li {list-style: none;color: #333;position: relative;padding-left: 30px;cursor: pointer;display: inline-block;margin-right: 10px;}
+#combustivel .completar ul li:last-child {margin-bottom: 0;}
+#combustivel .completar ul li.sim:before {background: url("../../src/images/sim.png") no-repeat;}
+#combustivel .completar ul li.nao:before {background: url("../../src/images/nao.png") no-repeat;}
+#combustivel .completar ul li span {padding-top: 3px;font-weight: 500;font-size: .9em;}
+#combustivel .completar ul li:before {position: absolute;left: 0;top: 0;content: "";width: 24px;height: 24px;}
+#combustivel fieldset {border: none;padding: 0;margin: 0;}
+#combustivel .bomba {width: 260px;height: 500px;vertical-align: top;display: inline-block;position: relative;}
+#combustivel .bomba .abastecer.disabled:after {content: "Insira os valores nos campos";position: absolute;left: -110px;top: 7px;font-size: .5em;background: #f44336;text-transform: none;line-height: 16px;width: 95px;padding: 7px;margin: 0;height: auto;font-weight: normal;color: #fff;text-align: right;opacity: 1;}
+#combustivel .bomba:before {width: 110%;height: 15px;left: -5%;bottom: -15px;content: "";position: absolute;}
+#combustivel .bomba.gasolina {background-color: #d81408;}
+#combustivel .bomba.gasolina:before {background-color: #d81408;}
+#combustivel .bomba.etanol {background-color: #ff5722;}
+#combustivel .bomba.etanol:before {background-color: #ff5722;}
+#combustivel .bomba.gas {background-color: #3f51b5;}
+#combustivel .bomba.gas:before {background-color: #3f51b5;}
+#combustivel .bomba.diesel {background-color: #00887b;}
+#combustivel .bomba.diesel:before {background-color: #00887b;}
+#combustivel .bomba:after {width: 70px;height: 100%;content: "";right: -70px;top: 0;position: absolute;background: url("../../src/images/bomba.png") no-repeat;background-size: 100%;}
+#combustivel .bomba .wrapper-info {padding: 15px;padding-top: 0;}
+#combustivel .bomba .wrapper-info i {color: #fff;font-style: normal;width: 100%;display: inline-block;font-size: 1em;font-family: "Roboto",sans-serif;}
+#combustivel .bomba .wrapper-info span {width: 95%;display: inline-block;background-color: #a5b8a2;color: #3e3d3e;padding: 7px 0px 2px;font-size: 2em;line-height: 1;font-family: "alarmclock";font-weight: bold;text-align: center;}
+#combustivel .bomba .litros {width: 50%;float: left;}
+#combustivel .bomba .reais {width: 50%;float: right;}
+#combustivel .bomba .tipo {background-color: #a5b8a2;width: 90%;color: #000;display: inline-block;border: 5px solid #fff;margin: 5%;}
+#combustivel .bomba .tipo .wrapper-tipo {border: 5px solid #333;padding: 10px;display: inline-block;width: 100%;}
+#combustivel .bomba .tipo i {font-style: normal;font-family: "Roboto",sans-serif;font-size: 1.8em;line-height: 1;position: relative;padding-top: 15px;display: inline-block;text-transform: capitalize;font-weight: 500;}
+#combustivel .bomba .tipo em {float: right;line-height: 60px;background: #000;text-align: center;font-style: normal;color: #fff;font-family: "alarmclock";font-weight: bold;font-size: 1.5em;padding-left: 10px;padding-right: 10px;}
+#combustivel .deseja {width: 500px;display: inline-block;margin-left: 90px;vertical-align: top;}
+#combustivel .deseja .line2 .mensagem-1 {position: absolute;display: none;left: inherit;left: 0;z-index: 99999999;opacity: 1;top: 60px;font-size: .75em;width: 80%;}
+#combustivel .deseja .line2 .mensagem-1.show {display: block;}
+#combustivel .deseja .line2 .mensagem-1:after {width: 0;height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent;border-bottom: 10px solid #000;position: absolute;right: 0;content: "";top: -19px;left: 0;margin: 0 auto;}
+#combustivel .deseja h3 {margin-top: 0;font-size: 1.5em;font-weight: 500;color: #ff5722;}
+#combustivel .deseja label {margin-bottom: 10px;display: inline-block;font-weight: bold;}
+#combustivel .deseja input[type="number"] {padding: 10px;width: 80%;}
+#combustivel .deseja .middle {width: 50%;float: left;}
+#combustivel .deseja .middle .line {position: relative;}
+#combustivel .deseja .middle input[type="number"] {padding-left: 45px;}
+#combustivel .deseja .middle span {font-size: .8em;display: none;}
+#combustivel .deseja .middle span.simbolo-real, #combustivel .deseja .middle span.simbolo-litro {position: absolute;z-index: 999999999;left: 0;top: 0;color: #333;display: block;height: 100%;line-height: 18px;padding: 9px;background-color: #e0e0e0;border: 1px solid #ccc;width: 40px;text-align: center;}
+#combustivel .deseja .middle span.show {display: block;}
+#combustivel .deseja .middle .icon {padding-left: 30px;position: relative;}
+#combustivel .deseja .middle .icon:before {width: 24px;height: 24px;position: absolute;left: 0;top: -4px;content: "";}
+#combustivel .deseja .middle .icon.icon-dinheiro:before {background: url("../../src/images/dinheiro.png") no-repeat center left;}
+#combustivel .deseja .middle .icon.icon-litros:before {background: url("../../src/images/litros.png") no-repeat center left;}
+#combustivel .option-fuel {margin: 0;padding: 0;}
+#combustivel .option-fuel li {list-style: none;}
+#combustivel .option-fuel li span {float: right;}
+#combustivel .button-prev {background-color: #ccc;color: #fff;}
+#combustivel .button-prev:hover {background-color: #bfbfbf;}
+#combustivel input[type="number"] {background-color: #fff;width: 100%;border: 1px solid #ccc;padding: 20px;vertical-align: top;height: 37px;}
+#combustivel input[type="number"]:focus {outline: none;background-color: #f5f5f5;}
+#combustivel .screen {display: none;}
+#combustivel .screen.hide {display: none;}
+#combustivel .screen.show {display: block;}
+@media screen and (max-width: 1270px) {#combustivel .situacao {width: 30%;}
+	#combustivel .situacao ul li {font-size: .7em;}
+	#combustivel .deseja {width: 400px;}}
+@media screen and (max-width: 1024px) {#combustivel .completar {width: 100%;float: right;left: 0;position: inherit;}
+	#combustivel .deseja .line2 .mensagem-1 {right: 0;width: 165px;left: inherit;cursor: pointer;}
+	#combustivel .cc-selector fieldset:nth-of-type(1), #combustivel .cc-selector fieldset:nth-of-type(2) {margin-bottom: 20px;}
+	#combustivel .screen-1 input[type="number"] {width: 35%;}
+	#combustivel .fieldset-fuel label {width: 65%;}
+	#combustivel .wrapper {width: 100%;}
+	#combustivel .completar ul li {display: inline-block;}
+	#combustivel .hide-desktop {display: inline-block;}
+	#combustivel .wrapper-deseja {overflow: visible;}
+	#combustivel .screen-1, #combustivel .screen-2, #combustivel .screen-3 {padding: 20px;}
+	#combustivel .abastecer-mobile {background-color: #f8cf26;color: #1f1f1f;display: inline-block;padding: 15px;font-size: 1.6em;cursor: pointer;padding-left: 40px;font-weight: bold;text-transform: uppercase;margin: 0 auto;right: 0;left: 0;position: absolute;bottom: 225px;text-align: center;}
+	#combustivel .abastecer-mobile.disabled {background-color: #ccc;pointer-events: none;}
+	#combustivel .abastecer-mobile:before {width: 64px;height: 64px;position: absolute;left: 6px;top: -4px;content: "";background: url("../../src/images/botao.png") no-repeat;}
+	#combustivel .screen-4 {padding: 20px;}
+	#combustivel .abastecer {width: 100%;position: relative;bottom: 0;margin-top: 20px;margin-bottom: 20px;}
+	#combustivel .abastecer:disabled:after {display: none;}
+	#combustivel .porcentagem {position: inherit;}
+	#combustivel .porcentagem li:nth-of-type(1), #combustivel .porcentagem li:nth-of-type(2), #combustivel .porcentagem li:nth-of-type(3), #combustivel .porcentagem li:nth-of-type(4), #combustivel .porcentagem li:nth-of-type(5) {height: 100%;line-height: 19px;padding: 10px;position: relative;left: -385px;}
+	#combustivel .porcentagem li:nth-of-type(1) i, #combustivel .porcentagem li:nth-of-type(1) em, #combustivel .porcentagem li:nth-of-type(2) i, #combustivel .porcentagem li:nth-of-type(2) em, #combustivel .porcentagem li:nth-of-type(3) i, #combustivel .porcentagem li:nth-of-type(3) em, #combustivel .porcentagem li:nth-of-type(4) i, #combustivel .porcentagem li:nth-of-type(4) em, #combustivel .porcentagem li:nth-of-type(5) i, #combustivel .porcentagem li:nth-of-type(5) em {font-style: normal;}
+	#combustivel .porcentagem li.animate-1 {left: 0px;animation-delay: 1s;-webkit-animation-delay: 1s;-webkit-transition: left 2s;-moz-transition: left 2s;-o-transition: left 2s;transition: left 2s;}
+	#combustivel .porcentagem li.animate-2 {left: 0px;animation-delay: 2s;-webkit-animation-delay: 2s;-webkit-transition: left 2.5s;-moz-transition: left 2.5s;-o-transition: left 2.5s;transition: left 2.5s;}
+	#combustivel .porcentagem li.animate-3 {left: 0px;animation-delay: 3s;-webkit-animation-delay: 3s;-webkit-transition: left 3s;-moz-transition: left 3s;-o-transition: left 3s;transition: left 3s;}
+	#combustivel .porcentagem li.animate-4 {left: 0px;animation-delay: 4s;-webkit-animation-delay: 4s;-webkit-transition: left 3.5s;-moz-transition: left 3.5s;-o-transition: left 3.5s;transition: left 3.5s;}
+	#combustivel .porcentagem li.animate-5 {left: 0px;animation-delay: 5s;-webkit-animation-delay: 5s;-webkit-transition: left 4s;-moz-transition: left 4s;-o-transition: left 4s;transition: left 4s;}
+	#combustivel .situacao {width: 100%;position: relative;padding-left: 20px;}
+	#combustivel .situacao:before {display: none;}
+	#combustivel .valor-pago {display: none;}
+	#combustivel .bomba {display: none;overflow: hidden;width: 100%;height: 100%;}
+	#combustivel .bomba.show {display: block;}
+	#combustivel .bomba.hide {display: none;}
+	#combustivel .bomba:after {display: none;}
+	#combustivel .bomba:before {display: none;}
+	#combustivel .button-mobile {width: 100%;display: inline-block;}
+	#combustivel .deseja {width: 55%;position: absolute;top: -200px;height: 100%;z-index: 2;padding: 0px;right: 0;left: 0;margin: 0 auto;}
+	#combustivel .deseja.hide {display: none;}
+	#combustivel .deseja .abastecer-mobile {position: relative;bottom: 0;}
+	#combustivel .deseja .abastecer-mobile.disabled, #combustivel .deseja .abastecer-mobile.disabled2 {background-color: #ccc;pointer-events: none;}
+	#combustivel .deseja .middle {width: 100%;float: left;margin-bottom: 15px;}
+	#combustivel .deseja .middle input[type="number"] {width: 100%;}
+	#combustivel .valor-pago.animate li {right: 0;}}
+@media screen and (max-width: 800px) {.github {display: none;}
+	#combustivel .bomba .tipo {margin: 0;margin-bottom: 15px;width: 100%;text-align: center;}
+	#combustivel .bomba .tipo .wrapper-tipo {padding: 0;}
+	#combustivel .deseja {width: 100%;position: inherit;}}

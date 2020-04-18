@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Saiba o quanto você paga em combustível!</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0, width=device-width"><link rel="stylesheet" href="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/build/css/main.css"><script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script><link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"><meta name="theme-color" content="#364854"><meta name="msapplication-navbutton-color" content="#364854"><meta name="apple-mobile-web-app-status-bar-style" content="#364854"><link rel="apple-touch-icon" sizes="144x144" href="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/favicon/favicon-16x16.png"><link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#a63235"><link rel="manifest" href="favicon/manifest.json"><meta name="msapplication-TileImage" content="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/favicon/mstile-144x144.png"><meta name="msapplication-config" content="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/favicon/browserconfig.xml"><meta property="og:locale" content="pt_BR"><meta property="og:type" content="article"><meta property="og:title" content="Saiba o quanto você paga em combustível!"><meta property="og:description" content="Veja para onde vai o seu dinheiro!"><meta property="og:url" content="https://jamesrmoro.me/combustivel/"><meta property="article:published_time" content="2017-08-05T14:42:54+00:00"><meta property="og:image" content="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/src/images/capa-facebook.png"><meta property="og:image:secure_url" content="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/src/images/capa-facebook.png"><meta property="og:image:width" content="765"><meta property="og:image:height" content="350"><meta name="twitter:card" content="summary"><meta name="twitter:description" content="Veja para onde vai o seu dinheiro!"><meta name="twitter:title" content="Saiba o quanto você paga em combustível!"><meta name="twitter:image" content="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/src/images/capa-facebook.png"></head><body>
+
+	<div class="all">
+		<a class="github" href="https://www.github.com/jamesrmoro/combustivel" target="_blank" title="Fork me on Github"><span>https://www.github.com/jamesrmoro/combustivel</span></a>
+		<div class="cloud c1"></div>
+		<div class="cloud c2"></div>
+		<div class="cloud c3"></div>
+		<div class="cloud c4"></div>
+		<div class="cloud c5"></div>
+
+		<span class="color3"></span>
+		<span class="color2"></span>
+		<span class="color1"></span>
+		<div id="combustivel">
+			<div class="wrapper">
+				<div class="screen show screen-1">
+					<h2>Qual a capacidade do seu tanque de combustível?</h2>
+					<input type="number" id="tanque"><span class="button button-next">Avançar</span>
+					<i class="info-tanque">Se você não sabe, insira um número aproximado. Por exemplo 30</i>
+				</div>
+				<div class="screen screen-2">
+					<h2>Qual a situação do seu tanque atualmente?</h2>
+					<div class="cc-selector">
+						<fieldset class="fieldset"><input id="op_100" type="radio" name="fuel" value="1"><label class="fuel-type fuel-0" for="op_100"></label>
+						</fieldset><fieldset class="fieldset"><input id="op_075" type="radio" name="fuel" value="0.75"><label class="fuel-type fuel-1" for="op_075"></label>
+						</fieldset><fieldset class="fieldset"><input id="op_050" type="radio" name="fuel" value="0.50"><label class="fuel-type fuel-2" for="op_050"></label>
+						</fieldset><fieldset class="fieldset"><input id="op_025" type="radio" name="fuel" value="0.25"><label class="fuel-type fuel-3" for="op_025"></label>
+						</fieldset></div>
+					<span class="button button-prev">Voltar</span>
+					<span class="button button-next">Avançar</span>
+				</div>
+				<div class="screen screen-3">
+					<h2>Vai abastecer com qual combustível?</h2>
+					<fieldset class="fieldset-fuel"><input type="radio" value="4.39" id="gasolina" name="fuel"><label for="gasolina">Gasolina <span>R$4,39</span></label>
+					</fieldset><fieldset class="fieldset-fuel"><input type="radio" value="3.20" id="etanol" name="fuel"><label for="etanol">Etanol <span>R$3,20</span></label>
+					</fieldset><fieldset class="fieldset-fuel"><input type="radio" value="3.40" id="diesel" name="fuel"><label for="diesel">Diesel <span>R$3,40</span></label>
+					</fieldset><span class="button button-prev">Voltar</span>
+					<span class="button button-next">Avançar</span>
+				</div>
+				<div class="screen screen-4">
+					<div class="bomba">
+						<div class="tipo">
+							<div class="wrapper-tipo">
+								<i>Gasolina</i>
+								<em></em>
+							</div>
+						</div>
+						<div class="wrapper-info">
+							<div class="litros">
+								<i>Litros</i>
+								<span class="count">00.00</span>
+							</div>
+							<div class="reais">
+								<i>Reais</i>
+								<span class="count">00.00</span>
+							</div>
+						</div>
+						<span class="abastecer disabled" id="abastecer">Abastecer</span>
+						<ul class="porcentagem"><li class="item1"><em class="hide-desktop">Você pagou R$</em><i class="value">12%</i> <i class="hide-desktop">de</i> Distribuição e Revenda</li>
+							<li class="item2"><em class="hide-desktop">Você pagou R$</em><i class="value">12%</i> <i class="hide-desktop">de</i> Custo Etanol Anidro</li>
+							<li class="item3"><em class="hide-desktop">Você pagou R$</em><i class="value">28%</i> <i class="hide-desktop">de</i> ICMS</li>
+							<li class="item4"><em class="hide-desktop">Você pagou R$</em><i class="value">15%</i> <i class="hide-desktop">de</i> CIDE e PIS/PASEP e COFINS</li>
+							<li class="item5"><em class="hide-desktop">Você pagou R$</em><i class="value">33%</i> <i class="hide-desktop">de</i> Produção / Refinaria</li>
+						</ul><ul class="valor-pago"><li class="item1"><span>Você pagará <strong>R$<i></i></strong> p/ Distribuição e Revenda</span></li>
+							<li class="item2"><span>Você pagará <strong>R$<i></i></strong> p/ Custo Etanol Anidro</span></li>
+							<li class="item3"><span>Você pagará <strong>R$<i></i></strong> p/ ICMS</span></li>
+							<li class="item4"><span>Você pagará <strong>R$<i></i></strong> p/ CIDE e PIS/PASEP e COFINS</span></li>
+							<li class="item5"><span>Você pagará <strong>R$<i></i></strong> p/ Produção / Refinaria</span></li>
+						</ul></div>
+					<div class="deseja">
+						<div class="wrapper-deseja">
+							<h3>Como deseja abastecer?</h3>
+							<fieldset class="middle"><label for="" class="icon icon-dinheiro">Em dinheiro?</label>
+								<div class="line line2 aviso-1">
+									<span class="mensagem-1">Você só pode abastecer no máximo com<br><em>R$ <i></i></em> devido a capacidade do seu tanque</span>
+									<span class="simbolo-real">R$</span>
+									<input id="reais" type="number" placeholder="Ex: 25.00" value=""></div>
+								<span class="reais-p">Será abastecido com <i></i> litros</span>
+							</fieldset><fieldset class="middle"><label for="" class="icon icon-litros">Em litros?</label>
+								<div class="line">
+									<span class="simbolo-litro">L</span>
+									<input id="litros" type="number" placeholder="Ex: 4" value=""></div>
+								<span class="litros-p">Em dinheiro você gastará <i></i></span>
+							</fieldset><span class="button-mobile abastecer-mobile disabled2">Abastecer</span>
+							<div class="completar" style="display:none">
+								<span class="title">Deseja completar o tanque?</span>
+								<span class="descr">Vale lembrar que o seu tanque só cabe <i></i> litros</span>
+								<ul><li class="sim"><span>sim</span></li>
+									<li class="nao"><span>não</span></li>
+								</ul></div>
+						</div>
+						<div class="situacao">
+							<span>Informações do tanque</span>
+							<ul><li class="valor-tanque-inicial">Armazenamento de <i></i> litros</li>
+								<li class="valor-tanque">Resta apenas <i></i> litros para completar</li>
+							</ul></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/combustivel/build/js/script.js"></script></body></html>

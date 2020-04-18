@@ -1,0 +1,9 @@
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body {margin: 0;padding: 0;text-align: center;}
+ul {padding: 20px;margin: 0;width: 100%;}
+.tabela li {-webkit-box-shadow: inset 0px 0px 0px 1px #000;-moz-box-shadow: inset 0px 0px 0px 1px #000;box-shadow: inset 0px 0px 0px 1px #000;width: 2.43%;background-color: #fff;height: 31px;display: inline;float: left;cursor: crosshair;}
+.tabela {width: 100%;display: inline-block;}
+.area-cores {display: inline-block;position: absolute;left: 10px;width: 130px;top: 10px;padding: 5px;border: 1px dashed #333;background-color: #fff;}
+.area-cores #colorSelector {background: none;bottom: -33px;position: absolute;right: -4px;}
+.cores li {width: 25%;height: 30px;display: inline;float: left;cursor: pointer;}
+.move {cursor: move;position: absolute;left: 0;bottom: -25px;padding-left: 13px;}
