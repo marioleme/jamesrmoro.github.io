@@ -1,0 +1,5 @@
+body {margin: 0;padding: 0;}
+.box {height: 238px;}
+img {max-width: 100%;}
+.wrapper {display: grid;grid-template-columns: 1fr 1fr 1fr;grid-gap: 20px;background-color: #fff;color: #444;padding: 20px;}
+.imagem2 {border: 2px solid red;width: 230px;height: 235px;margin: 0 auto;display: block;object-fit: cover;}
