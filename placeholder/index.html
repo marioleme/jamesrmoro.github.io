@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Placeholder</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0, width=device-width"><link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css"><script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script><style>
+		.placeholder {
+			position: relative;
+		}
+		img {
+			vertical-align: top;
+		}
+		.placeholder-wrapper {
+			position: relative;
+		}
+		h2 {
+			display: inline-block;
+		}
+		.loader {
+			content: "";
+			left: 0;
+			top: 0;
+			background-color: #D0D6DD;
+			position: absolute;
+			display: inline-block;
+		}
+		ul, ol {
+			margin: 0;
+			padding: 0;
+		}
+		ul li {
+			list-style: none;
+			margin-bottom: 10px;
+		}
+		.item {
+			position: relative;
+			overflow: hidden;
+		}
+		.item:before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 50%;
+			z-index: 1;
+			width: 500%;
+			margin-left: -250%;
+			-webkit-animation: phAnimation .8s linear infinite;
+			animation: phAnimation .8s linear infinite;
+			background: linear-gradient(90deg,hsla(0,0%,100%,0) 46%,hsla(0,0%,100%,.35) 50%,hsla(0,0%,100%,0) 54%) 50% 50%;
+		}
+	</style></head><body>
+	<div class="item">
+		<h2 class="placeholder">Título<div class="loader"></div></h2>
+		<img class="image-placeholder" src="https://via.placeholder.com/300/09f/ccc.png" alt=""><p class="placeholder">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, adipisci doloribus obcaecati deserunt sapiente saepe culpa, enim, molestiae quis repudiandae delectus explicabo. Quidem ipsum sit nisi commodi expedita recusandae, facere?</p>
+		<p class="placeholder">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet temporibus molestias, perferendis eum odio! Mollitia id quisquam eveniet quod praesentium doloremque dolorum nihil accusantium ut, placeat unde obcaecati accusamus saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsum ipsam quo placeat ratione, aspernatur tempore facilis, ducimus minima cum expedita provident sapiente quae minus odit. Amet vero, molestias tenetur.</p>
+		<ul><li class="placeholder"><a href="">Item</a></li>
+			<li class="placeholder"><a href="">Item</a></li>
+			<li class="placeholder"><a href="">Item</a></li>
+			<li class="placeholder"><a href="">Item</a></li>
+		</ul></div>
+	<script>
+		$( document ).ready(function() {
+			$(".image-placeholder").each(function(){
+				$(this).wrap( "<div class='placeholder-wrapper'>" );
+				width = $(this).width();
+				height = $(this).height();
+				$(".placeholder-wrapper").append("<div class='loader' style='width:"+width+"px;height:"+height+"px'>");
+			});
+			$(".placeholder").each(function(){
+				width = $(this).width();
+				height = $(this).height();
+				$(this).append("<div class='loader' style='width:"+width+"px;height:"+height+"px'>");
+			});
+		});
+	</script></body></html>

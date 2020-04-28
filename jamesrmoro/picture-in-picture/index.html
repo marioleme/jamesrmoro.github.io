@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Picture In Picture</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0, width=device-width"></head><script>
+	function assistirVideo() {
+		var video = document.querySelector("#meu-video");
+		video.requestPictureInPicture();
+	}
+</script><body>
+
+	<div class="wrapper">
+		<button onclick="assistirVideo()">Assistir</button>
+		<video style="width:300px" src="https://jamesrmoro.me/wp-content/themes/jamesrmoro/projetos/picture-in-picture/video.mp4" id="meu-video" controls></video></div>
+
+
+	
+
+</body></html>
